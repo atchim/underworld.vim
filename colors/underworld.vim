@@ -1,8 +1,3 @@
-" TITLE:   Underworld For Vim
-" VERSION: 0.0
-" AUTHOR:  atchim <atchim.gama.silva@gmail.com>
-" URL:     https://github.com/atchim/underworld.vim
-
 hi clear
 syntax reset
 
@@ -141,22 +136,22 @@ hi! link vimCommentTitle Todo
 
 " Terminal {{{1
 if has('nvim') && exists('&termguicolors') && &termguicolors
-	let g:terminal_color_0 = "#000000"
-	let g:terminal_color_1 = "#cb7f95"
-	let g:terminal_color_2 = "#5ea55b"
-	let g:terminal_color_3 = "#b58e6c"
-	let g:terminal_color_4 = "#729abc"
-	let g:terminal_color_5 = "#9a8ad7"
-	let g:terminal_color_6 = "#58a38b"
-	let g:terminal_color_7 = "#383838"
-	let g:terminal_color_8 = "#252525"
-	let g:terminal_color_9 = "#cb7f95"
-	let g:terminal_color_10 = "#5ea55b"
-	let g:terminal_color_11 = "#8d9c55"
-	let g:terminal_color_12 = "#729abc"
-	let g:terminal_color_13 = "#c47bc7"
-	let g:terminal_color_14 = "#58a38b"
-	let g:terminal_color_15 = "#959595"
+	let g:terminal_color_0 = '#000000'
+	let g:terminal_color_1 = '#cb7f95'
+	let g:terminal_color_2 = '#5ea55b'
+	let g:terminal_color_3 = '#b58e6c'
+	let g:terminal_color_4 = '#729abc'
+	let g:terminal_color_5 = '#9a8ad7'
+	let g:terminal_color_6 = '#58a38b'
+	let g:terminal_color_7 = '#383838'
+	let g:terminal_color_8 = '#252525'
+	let g:terminal_color_9 = '#cb7f95'
+	let g:terminal_color_10 = '#5ea55b'
+	let g:terminal_color_11 = '#8d9c55'
+	let g:terminal_color_12 = '#729abc'
+	let g:terminal_color_13 = '#c47bc7'
+	let g:terminal_color_14 = '#58a38b'
+	let g:terminal_color_15 = '#959595'
 
 	let g:terminal_color_background = g:terminal_color_0
 	let g:terminal_color_foreground = g:terminal_color_15
