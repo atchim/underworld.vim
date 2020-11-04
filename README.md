@@ -19,6 +19,40 @@ grayscale and other 8 are *colorful* ones.
 - Similar colors must mean similar things.
   - Recognition of visual elements becomes easier.
 
+## Customizations
+
+Is possible to enable highlight customizations for certain file types. This
+fix default highlight links for certain file types to make they fit better with
+the proposals of this color scheme. The following table shows all available
+customizations.
+
+| Variable                        | Customization                           |
+|---------------------------------|-----------------------------------------|
+| `g:underworld_custom_global`    | Enable/disable customizations globally. |
+| `g:underworld_custom_coc`       | Customizations for CoC plugin.          |
+| `g:underworld_custom_diff`      | Customizations for diff files.          |
+| `g:underworld_custom_fasm`      | Customizations for fasm assembly files. |
+| `g:underworld_custom_gitgutter` | Customizations for GitGutter plugin.    |
+| `g:underworld_custom_html`      | Customizations for HTML files.          |
+| `g:underworld_custom_nerdtree`  | Customizations for NERDTree plugin.     |
+| `g:underworld_custom_vim`       | Customizations for Vim scripts.         |
+
+By default, all customizations are enabled. To enable a customization, set its
+variable value to 1. If other value was set instead, that customization will be
+disabled. To disable customizations for HTML files, for example, put the
+following line in your `.vimrc` file.
+
+```vim
+let g:underworld_custom_html = 0
+```
+
+To disable customizations globally, put the following line in your
+`.vimrc` file.
+
+```vim
+let g:underworld_custom_global = 0
+```
+
 ## Color Table
 
 | #  | Name             | HTML    | RGB           |
