@@ -1,6 +1,6 @@
 # Arôloram, Underworld
 
-![Underworld Palette](palette.png =256x256)
+![Underworld Palette](palette-256x256.png)
 
 > Once a dwarf reaches the riches of deep darkness, they never want to
 > surface again.
