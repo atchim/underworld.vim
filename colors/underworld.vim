@@ -11,7 +11,7 @@ hi Comment guifg=#5a5a5a
 " Cursor
 hi CursorColumn guibg=#121212
 hi! link CursorLine CursorColumn
-hi CursorLineNr gui=none guibg=#080808 guifg=#5a5a5a
+hi CursorLineNr guifg=#5a5a5a
 
 " Diff Mode
 hi DiffAdd guibg=#5ea55b guifg=#000000
@@ -22,8 +22,8 @@ hi DiffText guibg=#8d9c55 guifg=#000000
 " Mark
 hi ColorColumn guibg=#080808
 hi! link FoldColumn LineNr
-hi! link Folded FoldColumn
-hi LineNr guibg=#080808 guifg=#383838
+hi Folded guibg=#121212 guifg=#5a5a5a
+hi LineNr guifg=#383838
 hi! link SignColumn LineNr
 
 " Menu
@@ -95,7 +95,7 @@ hi Underlined gui=underline guifg=none
 " Terminal
 "
 
-if has('nvim') && exists('&termguicolors') && &termguicolors
+if has('nvim')
 	let g:terminal_color_0 = '#000000'
 	let g:terminal_color_1 = '#cb7f95'
 	let g:terminal_color_2 = '#5ea55b'
@@ -124,15 +124,15 @@ endif
 hi CocBold gui=bold
 hi! link CocUnderline Underlined
 
-hi CocErrorFloat guifg=#cb7f95
-hi CocHintFloat guifg=#b58e6c
-hi CocInfoFloat guifg=#5ea55b
-hi CocWarningFloat guifg=#8d9c55
+hi! link CocErrorFloat LspDiagnosticsDefaultError
+hi! link CocHintFloat LspDiagnosticsDefaultHint
+hi! link CocInfoFloat LspDiagnosticsDefaultInformation
+hi! link CocWarningFloat LspDiagnosticsDefaultWarning
 
-hi CocErrorSign guibg=#080808 guifg=#cb7f95
-hi CocHintSign guibg=#080808 guifg=#b58e6c
-hi CocInfoSign guibg=#080808 guifg=#5ea55b
-hi CocWarningSign guibg=#080808 guifg=#8d9c55
+hi! link CocErrorSign LspDiagnosticsSignError
+hi! link CocHintSign LspDiagnosticsSignHint
+hi! link CocInfoSign LspDiagnosticsSignInformation
+hi! link CocWarningSign LspDiagnosticsSignWarning
 
 "
 " Diff
@@ -157,10 +157,10 @@ hi! link fasmSymbol Normal
 " GitGutter
 "
 
-hi GitGutterAdd guibg=#080808 guifg=#5ea55b
-hi GitGutterChange guibg=#080808 guifg=#8d9c55
-hi GitGutterChangeDelete guibg=#080808 guifg=#b58e6c
-hi GitGutterDelete guibg=#080808 guifg=#cb7f95
+hi GitGutterAdd guifg=#5ea55b
+hi GitGutterChange guifg=#8d9c55
+hi GitGutterChangeDelete guifg=#b58e6c
+hi GitGutterDelete guifg=#cb7f95
 
 "
 " HTML
@@ -168,6 +168,20 @@ hi GitGutterDelete guibg=#080808 guifg=#cb7f95
 
 hi! link htmlEndTag htmlTag
 hi! link htmlTag Comment
+
+"
+" LSP
+"
+
+hi LspDiagnosticsDefaultError guifg=#cb7f95
+hi LspDiagnosticsDefaultHint guifg=#b58e6c
+hi LspDiagnosticsDefaultInformation guifg=#5ea55b
+hi LspDiagnosticsDefaultWarning guifg=#8d9c55
+
+hi LspDiagnosticsSignError guifg=#cb7f95
+hi LspDiagnosticsSignHint guifg=#b58e6c
+hi LspDiagnosticsSignInformation guifg=#5ea55b
+hi LspDiagnosticsSignWarning guifg=#8d9c55
 
 "
 " NERDTree
