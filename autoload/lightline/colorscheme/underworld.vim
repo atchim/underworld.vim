@@ -2,8 +2,8 @@ if !exists("g:lightline")
   finish
 endif
 
-let s:underworld_00 = ['#000000', 'NONE']
-let s:underworld_01 = ['#080808', 'NONE']
+let s:underworld_00 = ['#080808', 'NONE']
+let s:underworld_01 = ['#0d0d0d', 'NONE']
 let s:underworld_02 = ['#121212', 'NONE']
 let s:underworld_03 = ['#1a1a1a', 'NONE']
 let s:underworld_04 = ['#252525', 'NONE']
