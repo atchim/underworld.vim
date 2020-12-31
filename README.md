@@ -1,25 +1,16 @@
-# Arôloram, Underworld
+# Underworld
 
 ![Underworld Palette](palette-256x256.png)
 
-> Once a dwarf reaches the riches of deep darkness, they never want to
-> surface again.
-
-This is a very dark color scheme. All craftsdwarfship is of the highest
-quality. It is composed of 16 colors based in the golden ratio, whose 8 are
-grayscale and other 8 are *colorful* ones.
+Underworld is a dark color scheme composed of 16 colors whose 8 are grayscale
+and other 8 are colorful ones.
 
 ## Philosophy
 
-- The dark is cozy, and therefore, must be the lair of the eyes.
-  - The background colors are the darkest possible.
-- The colors must be distributed evenly across the spectrum.
-  - The HUE variation of a color and its neighbor is always 45°.
-  - A side effect of this is that every color has its complement.
-- The colors must not strike the eyes.
-  - All foreground colors have the same lightness.
-- Similar colors must mean similar things.
-  - Recognition of visual elements becomes easier.
+- Darkest possible background.
+- Colors distributed evenly across the spectrum.
+- All foreground colors have the same lightness.
+- Similar colors means similar things.
 
 ## Color Table
 
@@ -41,22 +32,3 @@ grayscale and other 8 are *colorful* ones.
 | 13 | Portage          | #9a8ad7 | 154, 138, 215 |
 | 14 | Lilac Bush       | #c47bc7 | 196, 123, 199 |
 | 15 | Puce             | #cb7f95 | 203, 127, 149 |
-
-## Issues
-
-This may be not a good choice if you frequently switch from bright screen to
-the editor using this color scheme. This color scheme will better fit if you
-already has a dark environment.
-
-## Resource Links
-
-- [Aseprite][aseprite]: Tool used to create the palettes.
-- [Color Name & Hue][color-name-hue]: Tool used to obtain the color names.
-- [Colorizer][colorizer]: Tool used to obtain and adjust the colors.
-- [Golden Ratio Calculator][golden-ratio-calculator]: Tool used to obtain
-  values in the golden ratio.
-
-[aseprite]: https://www.aseprite.org/ 'Aseprite'
-[color-name-hue]: https://www.color-blindness.com/color-name-hue 'Color Name & Hue'
-[colorizer]: http://colorizer.org/ 'Colorizer'
-[golden-ratio-calculator]: https://www.omnicalculator.com/math/golden-ratio 'Golden Ratio Calculator'
