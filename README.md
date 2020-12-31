@@ -1,6 +1,6 @@
 # Underworld
 
-![Underworld Palette](palette_256x256.png)
+![Underworld Palette](palette-x256.png)
 
 Underworld is a dark color scheme composed of 16 colors whose 8 are grayscale
 and other 8 are colorful ones.
@@ -8,25 +8,25 @@ and other 8 are colorful ones.
 ## Philosophy
 
 - Very dark background colors.
-- Background colors gradient follows the golden ratio.
+- Grayscale gradient follows the golden ratio.
 - Colors distributed evenly across the spectrum.
 - All foreground colors have the same lightness.
-- Similar colors means similar things.
+- Similar colors mean similar things.
 
 ## Color Table
 
 | #  | HTML    | RGB           | L\*A\*B             |
 |----|---------|---------------|---------------------|
-| 0  | #080808 | 008, 008, 008 | ~02.2,  00.0,  00.0 |
-| 1  | #0d0d0d | 013, 013, 013 | ~03.5,  00.0,  00.0 |
-| 2  | #121212 | 018, 018, 018 | ~05.6,  00.0,  00.0 |
-| 3  | #1a1a1a | 026, 026, 026 | ~09.0,  00.0,  00.0 |
-| 4  | #252525 | 037, 037, 037 | ~14.6,  00.0,  00.0 |
-| 5  | #383838 | 056, 056, 056 | ~23.6,  00.0,  00.0 |
-| 6  | #5a5a5a | 090, 090, 090 | ~38.2,  00.0,  00.0 |
-| 7  | #959595 | 149, 149, 149 | ~61.8,  00.0,  00.0 |
-| 8  | #b58e6c | 181, 142, 108 | ~61.8,  10.1,  23.7 |
-| 9  | #8d9c55 | 141, 156, 085 | ~61.8, -16.8,  35.3 |
+| 00 | #080808 | 008, 008, 008 | ~02.2,  00.0,  00.0 |
+| 01 | #0d0d0d | 013, 013, 013 | ~03.5,  00.0,  00.0 |
+| 02 | #121212 | 018, 018, 018 | ~05.6,  00.0,  00.0 |
+| 03 | #1a1a1a | 026, 026, 026 | ~09.0,  00.0,  00.0 |
+| 04 | #252525 | 037, 037, 037 | ~14.6,  00.0,  00.0 |
+| 05 | #383838 | 056, 056, 056 | ~23.6,  00.0,  00.0 |
+| 06 | #5a5a5a | 090, 090, 090 | ~38.2,  00.0,  00.0 |
+| 07 | #959595 | 149, 149, 149 | ~61.8,  00.0,  00.0 |
+| 08 | #b58e6c | 181, 142, 108 | ~61.8,  10.1,  23.7 |
+| 09 | #8d9c55 | 141, 156, 085 | ~61.8, -16.8,  35.3 |
 | 10 | #5ea55b | 094, 165, 091 | ~61.8, -37.7,  31.5 |
 | 11 | #58a38d | 088, 163, 141 | ~61.8, -28.8,  04.2 |
 | 12 | #729abc | 114, 154, 188 | ~61.8, -04.9, -21.9 |

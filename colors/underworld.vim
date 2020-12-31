@@ -55,7 +55,7 @@ hi StatusLine gui=bold guibg=#121212 guifg=#959595
 hi StatusLineNC gui=none guibg=#0d0d0d guifg=#383838
 hi VertSplit gui=none guibg=#0d0d0d guifg=#252525
 
-" Tabs
+" Tab
 hi TabLine gui=none guibg=#121212 guifg=#5a5a5a
 hi TabLineFill gui=none guibg=#0d0d0d
 hi TabLineSel guibg=#080808 guifg=#959595
@@ -74,13 +74,13 @@ hi Title guifg=#58a38d
 " Syntax
 "
 
-" Constants
+" Constant
 hi Character guifg=#5ea55b
 hi Constant guifg=#b58e6c
 hi Number guifg=#8d9c55
 hi! link String Character
 
-" Keywords
+" Keyword
 hi Identifier guifg=#729abc
 hi Preproc guifg=#c97ea6
 hi Statement gui=none guifg=#c47bc7
