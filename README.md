@@ -1,6 +1,6 @@
 # Underworld
 
-![Underworld Palette](palette.png =256x)
+![Underworld Palette](palette.png =256x256)
 
 Underworld is a dark color scheme composed of 16 colors whose 8 are grayscale
 and other 8 are colorful ones.
