@@ -1,6 +1,6 @@
 # Underworld
 
-![Underworld Palette](palette_256x256.png)
+![Underworld Palette](palette.png =256x)
 
 Underworld is a dark color scheme composed of 16 colors whose 8 are grayscale
 and other 8 are colorful ones.
@@ -8,10 +8,10 @@ and other 8 are colorful ones.
 ## Philosophy
 
 - Very dark background colors.
-- Background colors gradient follows the golden ratio.
+- Grayscale gradient follows the golden ratio.
 - Colors distributed evenly across the spectrum.
 - All foreground colors have the same lightness.
-- Similar colors means similar things.
+- Similar colors mean similar things.
 
 ## Color Table
 
