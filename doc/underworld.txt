@@ -1,0 +1,98 @@
+*underworld.txt*          The rainbow in the darkness.
+
+Underworld                                                         *underworld*
+
+Underworld is a dark color scheme for Vim.
+
+=============================================================================
+FEATURES                                                  *underworld-features*
+
+* Dark theme.
+* Grayscale according to the golden ratio.
+* Colors evenly distributed across the spectrum.
+* Foreground colors have the same lightness.
+* Similar colors have similar meanings.
+
+=============================================================================
+COLORS                                                      *underworld-colors*
+>
+  | #  | ANSI | HTML    | RGB           | LAB                 |
+  |----|------|---------|---------------|---------------------|
+  | 00 | 232  | #080808 | 008, 008, 008 | ≈02.2,  00.0,  00.0 |
+  | 01 | 233  | #0d0d0d | 013, 013, 013 | ≈03.5,  00.0,  00.0 |
+  | 02 | 234  | #121212 | 018, 018, 018 | ≈05.6,  00.0,  00.0 |
+  | 03 | 235  | #1a1a1a | 026, 026, 026 | ≈09.0,  00.0,  00.0 |
+  | 04 | 236  | #252525 | 037, 037, 037 | ≈14.6,  00.0,  00.0 |
+  | 05 | 237  | #383838 | 056, 056, 056 | ≈23.6,  00.0,  00.0 |
+  | 06 | 240  | #5a5a5a | 090, 090, 090 | ≈38.2,  00.0,  00.0 |
+  | 07 | 246  | #959595 | 149, 149, 149 | ≈61.8,  00.0,  00.0 |
+  | 08 | 137  | #b58e6c | 181, 142, 108 | ≈61.8,  10.1,  23.7 |
+  | 09 | 101  | #8d9c55 | 141, 156, 085 | ≈61.8, -16.8,  35.3 |
+  | 10 | 071  | #5ea55b | 094, 165, 091 | ≈61.8, -37.7,  31.5 |
+  | 11 | 072  | #58a38d | 088, 163, 141 | ≈61.8, -28.8,  04.2 |
+  | 12 | 067  | #729abc | 114, 154, 188 | ≈61.8, -04.9, -21.9 |
+  | 13 | 140  | #9a8ad7 | 154, 138, 215 | ≈61.8,  22.7, -37.3 |
+  | 14 | 176  | #c47bc7 | 196, 123, 199 | ≈61.8,  40.4,  27.9 |
+  | 15 | 174  | #cb7f95 | 203, 127, 149 | ≈61.8,  29.4,  12.4 |
+
+=============================================================================
+GLOBALS                                                    *underworld-globals*
+
+underworld#palette                                         *underworld#palette*
+  A list containing 17 items. The first 16 items of the list are lists
+  respectively containing an integer, which is a |cterm-colors|, and a
+  HTML hexadecimal color string, which is a |gui-colors|.
+
+  The last item of this list is a list containing 2 'NONE' strings. This item
+  is used to set a colorless attribute of a |group-name|.
+
+  For more details about the colors of this palette, see |underworld-colors|.
+
+=============================================================================
+FUNCTIONS                                                *underworld-functions*
+
+                                                                *underworld#Hi*
+underworld#Hi({group}, {fg}=-1, {bg}=-1, {attrs}='NONE', {sp}=-1)
+  A wrapper function to the |:highlight| command which only uses colors
+  defined in the |underworld#palette|.
+
+  The {group} parameter takes a string, which is the |group-name| to be
+  highlighted.
+
+  The {attrs} parameter takes an |attr-list| to define both |highlight-cterm|
+  and |highlight-gui|. The default value for this parameter is 'NONE'.
+
+  The {fg}, {bg} and {sp} parameters take an integer, which is the color pair
+  index to the |underworld#palette|. The default value for these parameters
+  is -1, which is the last color pair of the |underworld#palette|.
+
+  The {fg} parameter is used to define both |highlight-ctermfg| and
+  |highlight-guifg.|
+
+  The {bg} parameter is used to define both |highlight-ctermbg| and
+  |highlight-guibg.|
+
+  The {sp} parameter is used to define |highlight-guisp|.
+
+=============================================================================
+ABOUT                                                        *underworld-about*
+
+This color scheme was originally written in 2020 by Átila Gama Silva, aka
+@atchim on GitHub. His profile can be accessed by the link
+https://github.com/atchim.
+
+It's heavily inspired by the Bubblegum color scheme written by @baskerville.
+The Bubblegum repository can be accessed by the link
+https://github.com/baskerville/bubblegum.
+
+Contributions are all welcome through the Underworld repository that can be
+accessed by the link https://github.com/atchim/underworld.
+
+=============================================================================
+LICENSE                                                    *underworld-license*
+
+Underworld is released under the BSD 2-Clause license. See the included
+LICENSE file for details.
+
+=============================================================================
+vim:ft=help:nospell:tw=77
