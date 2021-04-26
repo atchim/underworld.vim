@@ -68,16 +68,17 @@ call s:Hi('Underlined', -1, -1, 'underline')
 "
 
 let s:range = range(16)
+let s:term = [0, 15, 10, 8, 12, 13, 11, 5, 4, 15, 10, 9, 12, 14, 11, 7]
 
 if has('nvim')
   for s:i in s:range
-    let g:terminal_color_{s:i} = g:underworld#palette[s:i][1]
+    let g:terminal_color_{s:i} = g:underworld#palette[s:term[s:i]][1]
   endfor
 elseif has('terminal')
   let g:terminal_ansi_colors = []
 
   for s:i in s:range
-    call add(g:terminal_ansi_colors, g:underworld#palette[s:i][1])
+    call add(g:terminal_ansi_colors, g:underworld#palette[s:term[s:i]][1])
   endfor
 endif
 
@@ -116,6 +117,16 @@ call s:Hi('MoreMsg', 10, -1, 'bold')
 call s:Hi('Question', 8, -1, 'bold')
 call s:Hi('WarningMsg', 9, -1, 'bold')
 
+" Misc
+call s:Hi('Conceal', 11, -1, 'italic')
+call s:Hi('Directory', 14, -1, 'bold')
+call s:Hi('Error', 0, 15, 'bold')
+call s:Hi('Ignore')
+call s:Hi('MatchParen', 14, 4, 'bold')
+call s:Hi('NonText', 4, -1, 'bold')
+call s:Hi('SpecialKey', 11, -1, 'italic')
+call s:Hi('Title', 11, -1, 'bold')
+
 " Search
 call s:Hi('IncSearch', 13, -1, 'bold,reverse')
 call s:Hi('Search', 9, 5, 'bold')
@@ -136,16 +147,6 @@ call s:Hi('VertSplit', 4, 1)
 call s:Hi('TabLine', 6, 2)
 call s:Hi('TabLineFill', -1, 1)
 call s:Hi('TabLineSel', 7, 0, 'bold')
-
-" Misc
-call s:Hi('Conceal', 11, -1, 'italic')
-call s:Hi('Directory', 14, -1, 'bold')
-call s:Hi('Error', 0, 15, 'bold')
-call s:Hi('Ignore')
-call s:Hi('MatchParen', 14, 4, 'bold')
-call s:Hi('NonText', 4, -1, 'bold')
-call s:Hi('SpecialKey', 11, -1, 'italic')
-call s:Hi('Title', 11, -1, 'bold')
 
 " Whitespace
 if has('nvim') | call s:Hi('Whitespace', 5) | endif
