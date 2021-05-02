@@ -1,12 +1,13 @@
 if !exists('g:lightline') | finish | endif
 
-function! s:v(fg, bg, attrs='NONE')
+function! s:v(fg, bg, ...)
   let l:v = []
   call add(l:v, g:underworld#palette[a:fg][1])
   call add(l:v, g:underworld#palette[a:bg][1])
   call add(l:v, g:underworld#palette[a:fg][0])
   call add(l:v, g:underworld#palette[a:bg][0])
-  if a:attrs !=# 'NONE' | call add(l:v, a:attrs) | endif
+  let l:attrs = get(a:, 1, 'NONE')
+  if l:attrs !=# 'NONE' | call add(l:v, l:attrs) | endif
   return l:v
 endfunction
 
