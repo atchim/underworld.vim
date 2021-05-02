@@ -21,24 +21,27 @@ let g:underworld#palette = [
   \ ['NONE', 'NONE'],
 \ ]
 
-function! underworld#Hi(group, fg=-1, bg=-1, attrs='NONE', sp=-1)
-  let l:bg = g:underworld#palette[a:bg]
-  let l:fg = g:underworld#palette[a:fg]
-  let l:sp = g:underworld#palette[a:sp]
+function! underworld#Hi(group, ...)
+  let l:attrs = get(a:, 3, 'NONE')
+  let l:bg = g:underworld#palette[get(a:, 2, -1)]
+  let l:fg = g:underworld#palette[get(a:, 1, -1)]
+  let l:guisp = get(a:, 4, -1)
 
-  if !has('gui_running') && a:sp != -1
-    let l:fg = g:underworld#palette[a:sp]
-    let l:sp = g:underworld#palette[-1]
+  if !has('gui_running') && l:guisp != -1
+    let l:fg = g:underworld#palette[l:guisp]
+    let l:guisp = g:underworld#palette[-1]
+  else
+    let l:guisp = g:underworld#palette[l:guisp]
   endif
 
   execute
     \ 'highlight '
     \ a:group
-    \ ' cterm=' . a:attrs
+    \ ' cterm=' . l:attrs
     \ ' ctermbg=' . l:bg[0]
     \ ' ctermfg=' . l:fg[0]
-    \ ' gui=' . a:attrs
+    \ ' gui=' . l:attrs
     \ ' guibg=' . l:bg[1]
     \ ' guifg=' . l:fg[1]
-    \ ' guisp=' . l:sp[1]
+    \ ' guisp=' . l:guisp[1]
 endfunction
