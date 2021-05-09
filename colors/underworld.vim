@@ -7,11 +7,11 @@ let s:Hi = function('g:underworld#Hi')
 " Diff
 "
 
-call s:Hi('diffAdded', 10)
+call s:Hi('diffAdded', 11)
 hi! link diffFile Comment
-call s:Hi('diffLine', 14)
-call s:Hi('diffRemoved', 15)
-call s:Hi('diffSubname', 13)
+call s:Hi('diffLine', 15)
+call s:Hi('diffRemoved', 8)
+call s:Hi('diffSubname', 14)
 
 "
 " HTML
@@ -26,10 +26,10 @@ hi! link htmlTag Comment
 
 if has('nvim-0.5')
   " Default
-  call s:Hi('LspDiagnosticsDefaultError', 15)
-  call s:Hi('LspDiagnosticsDefaultHint', 8)
-  call s:Hi('LspDiagnosticsDefaultInformation', 10)
-  call s:Hi('LspDiagnosticsDefaultWarning', 9)
+  call s:Hi('LspDiagnosticsDefaultError', 8)
+  call s:Hi('LspDiagnosticsDefaultHint', 9)
+  call s:Hi('LspDiagnosticsDefaultInformation', 11)
+  call s:Hi('LspDiagnosticsDefaultWarning', 10)
 
   " Sign
   hi! link LspDiagnosticsSignError LspDiagnosticsDefaultError
@@ -47,20 +47,20 @@ call s:Hi('Comment', 6)
 call s:Hi('Normal', 7, 0)
 
 " Constant
-call s:Hi('Character', 10)
-call s:Hi('Constant', 8)
-call s:Hi('Number', 9)
+call s:Hi('Character', 11)
+call s:Hi('Constant', 9)
+call s:Hi('Number', 10)
 hi! link String Character
 
 " Keyword
-call s:Hi('Identifier', 12)
-call s:Hi('Preproc', 15)
-call s:Hi('Statement', 14)
-call s:Hi('Type', 13)
+call s:Hi('Identifier', 13)
+call s:Hi('Preproc', 8)
+call s:Hi('Statement', 15)
+call s:Hi('Type', 14)
 
 " Special
-call s:Hi('Special', 11)
-call s:Hi('Todo', 11, -1, 'bold')
+call s:Hi('Special', 12)
+call s:Hi('Todo', 12, -1, 'bold')
 call s:Hi('Underlined', -1, -1, 'underline')
 
 "
@@ -68,7 +68,7 @@ call s:Hi('Underlined', -1, -1, 'underline')
 "
 
 let s:range = range(16)
-let s:term = [0, 15, 10, 8, 12, 13, 11, 5, 4, 15, 10, 9, 12, 14, 11, 7]
+let s:term = [0, 8, 11, 9, 13, 14, 12, 5, 4, 8, 11, 10, 13, 15, 12, 7]
 
 if has('nvim')
   for s:i in s:range
@@ -92,10 +92,10 @@ hi! link CursorLine CursorColumn
 call s:Hi('CursorLineNr', 6, -1, 'bold')
 
 " Diff Mode
-call s:Hi('DiffAdd', 0, 10, 'bold')
-call s:Hi('DiffChange', 0, 8, 'bold')
-call s:Hi('DiffDelete', 0, 15, 'bold')
-call s:Hi('DiffText', 0, 9, 'bold')
+call s:Hi('DiffAdd', 0, 11, 'bold')
+call s:Hi('DiffChange', 0, 9, 'bold')
+call s:Hi('DiffDelete', 0, 8, 'bold')
+call s:Hi('DiffText', 0, 10, 'bold')
 
 " Mark
 call s:Hi('ColorColumn', -1, 1)
@@ -112,31 +112,31 @@ call s:Hi('PmenuThumb', -1, 3)
 call s:Hi('WildMenu', 0, 6, 'bold')
 
 " Message
-call s:Hi('ErrorMsg', 15, -1, 'bold')
-call s:Hi('MoreMsg', 10, -1, 'bold')
-call s:Hi('Question', 8, -1, 'bold')
-call s:Hi('WarningMsg', 9, -1, 'bold')
+call s:Hi('ErrorMsg', 8, -1, 'bold')
+call s:Hi('MoreMsg', 11, -1, 'bold')
+call s:Hi('Question', 9, -1, 'bold')
+call s:Hi('WarningMsg', 10, -1, 'bold')
 
 " Misc
-call s:Hi('Conceal', 11, -1, 'italic')
-call s:Hi('Directory', 14, -1, 'bold')
-call s:Hi('Error', 0, 15, 'bold')
+call s:Hi('Conceal', 12, -1, 'italic')
+call s:Hi('Directory', 15, -1, 'bold')
+call s:Hi('Error', 0, 8, 'bold')
 call s:Hi('Ignore')
-call s:Hi('MatchParen', 14, 4, 'bold')
+call s:Hi('MatchParen', 15, 4, 'bold')
 call s:Hi('NonText', 4, -1, 'bold')
-call s:Hi('SpecialKey', 11, -1, 'italic')
-call s:Hi('Title', 11, -1, 'bold')
+call s:Hi('SpecialKey', 12, -1, 'italic')
+call s:Hi('Title', 12, -1, 'bold')
 
 " Search
-call s:Hi('IncSearch', 13, -1, 'bold,reverse')
-call s:Hi('Search', 9, 5, 'bold')
+call s:Hi('IncSearch', 14, -1, 'bold,reverse')
+call s:Hi('Search', 10, 5, 'bold')
 call s:Hi('Visual', -1, 3)
 
 " Spell
-call s:Hi('SpellBad', -1, -1, 'undercurl', 15)
-call s:Hi('SpellCap', -1, -1, 'undercurl', 10)
-call s:Hi('SpellLocal', -1, -1, 'undercurl', 9)
-call s:Hi('SpellRare', -1, -1, 'undercurl', 8)
+call s:Hi('SpellBad', -1, -1, 'undercurl', 8)
+call s:Hi('SpellCap', -1, -1, 'undercurl', 11)
+call s:Hi('SpellLocal', -1, -1, 'undercurl', 10)
+call s:Hi('SpellRare', -1, -1, 'undercurl', 9)
 
 " Status Line
 call s:Hi('StatusLine', 7, 2, 'bold')

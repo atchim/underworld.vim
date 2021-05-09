@@ -22,19 +22,19 @@ let s:p = {
   \ 'visual': {},
 \ }
 
-let s:p.insert.left = [s:v(0, 10, 'bold'), s:f]
-let s:p.normal.left = [s:v(0, 11, 'bold'), s:f]
-let s:p.replace.left = [s:v(0, 15, 'bold'), s:f]
-let s:p.visual.left = [s:v(0, 9, 'bold'), s:f]
+let s:p.insert.left = [s:v(0, 11, 'bold'), s:f]
+let s:p.normal.left = [s:v(0, 12, 'bold'), s:f]
+let s:p.replace.left = [s:v(0, 8, 'bold'), s:f]
+let s:p.visual.left = [s:v(0, 10, 'bold'), s:f]
 
 let s:p.inactive.left = [s:v(5, 1)]
 let s:p.inactive.middle = copy(s:p.inactive.left)
 let s:p.inactive.right = copy(s:p.inactive.middle)
 
-let s:p.normal.error = [s:v(0, 15, 'bold')]
+let s:p.normal.error = [s:v(0, 8, 'bold')]
 let s:p.normal.middle = [s:v(6, 2, 'bold')]
 let s:p.normal.right = copy(s:p.normal.middle)
-let s:p.normal.warning = [s:v(0, 9, 'bold')]
+let s:p.normal.warning = [s:v(0, 10, 'bold')]
 
 let s:p.tabline.left = [s:v(6, 2)]
 let s:p.tabline.middle = [s:v(-1, 1)]
